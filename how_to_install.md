@@ -93,7 +93,7 @@ ssh -f -nNT -o ExitOnForwardFailure=yes -o TCPKeepAlive=yes -R XXXXX:127.0.0.1:2
 ```
 /home/deepuser> crontab -e
 MAILTO=""
-*/10 * * * * /home/deepuser/reverse_ssh.sh
+*/10 * * * * /home/xxxxx/reverse_ssh.sh
 ```
 ```
 /home/deepuser> sudo service cron reload
