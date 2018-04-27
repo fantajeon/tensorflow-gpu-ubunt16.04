@@ -1,5 +1,21 @@
 
 
+# NVIDIA Driver
+sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo apt update
+
+
+# TWEAK(swap capslock and ctrl)
+sudo apt install gnome-tweak-tool
+
+
+# TMUX
+sudo apt install tmux
+
+# VIM
+sudo apt install vim
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+mkdir -p ~/.vim/autoload ~/.vim/bundle && curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 # PYTHON 3.6
 sudo add-apt-repository ppa:deadsnakes/ppa
