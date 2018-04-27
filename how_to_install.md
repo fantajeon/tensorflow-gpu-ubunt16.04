@@ -70,7 +70,7 @@ sess = tf.Session()
 sess.run(hello)
 ```
 
-# install mssql
+# install pymssql
 ```
 export PYMSSQL_BUILD_WITH_BUNDLED_FREETDS=1
 pip install pymssql
