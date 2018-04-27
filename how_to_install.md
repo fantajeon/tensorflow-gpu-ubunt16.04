@@ -98,3 +98,9 @@ MAILTO=""
 ```
 /home/deepuser> sudo service cron reload
 ```
+
+# matplob
+```bashshell
+sudo apt install python3.6-tk
+pip install matploblib
+```
