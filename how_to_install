@@ -46,3 +46,6 @@ pip install --upgrade tensorflow-gpu
 
 # install mssql
 
+
+# install extra packages
+pip install dateutil
