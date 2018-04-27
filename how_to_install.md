@@ -81,3 +81,20 @@ pip install pymssql
 pip install pymysql
 pip install dateutils
 ```
+# REVERSE SSH(Gateway out of NAT)
+```
+/home/deepuser> cat > reverse_ssh.sh
+#!/bin/bash
+ssh -f -nNT -o ExitOnForwardFailure=yes -o TCPKeepAlive=yes -R XXXXX:127.0.0.1:22 ubuntu@X5XXXXX -i ~/XXXXXX.pem
+```
+```
+/home/deepuser> chmod +x reverse_ssh.sh
+```
+```
+/home/deepuser> crontab -e
+MAILTO=""
+*/10 * * * * /home/deepuser/reverse_ssh.sh
+```
+```
+/home/deepuser> sudo service cron reload
+```
