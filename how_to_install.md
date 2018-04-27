@@ -7,7 +7,7 @@ sudo apt update
 Menu > System Settings > Software Update > Addtional Drivers
 ```
 
-# CUDA
+# CUDA(9.0, not 9.1)
 ```bashshell
 https://developer.nvidia.com/cuda-downloads
 ```
