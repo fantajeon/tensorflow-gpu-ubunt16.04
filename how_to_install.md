@@ -60,6 +60,8 @@ source ~/tf/bin/activate
 ```
 easy_install -U pip
 pip install --upgrade tensorflow-gpu
+   or
+pip install tf-nightly-gpu
 ```
 
 # tensorflow validation
