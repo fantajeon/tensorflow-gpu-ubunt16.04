@@ -11,6 +11,7 @@ Menu > System Settings > Software Update > Addtional Drivers
 ```bashshell
 https://developer.nvidia.com/cuda-downloads
 ```
+go to legacy release
 
 # ~/.bashrc
 ```
@@ -18,8 +19,9 @@ export PATH=/usr/local/cuda/bin:${PATH}
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH} 
 ```
 
-# cuDNN
+# cuDNN(for 9.0)
 https://developer.nvidia.com/cudnn
+go to legacy release
 
 # ldconfig
 ```
