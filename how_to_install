@@ -24,3 +24,14 @@ mkdir -p ~/.vim/autoload ~/.vim/bundle && curl -LSso ~/.vim/autoload/pathogen.vi
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt-get update
 sudo apt-get install python3.6 python3.6-dev virtualenv
+
+# Build Virtual Env
+virtualenv --system-site-packages -p python3.6 tf
+source ~/tf/bin/activate
+
+# Tensorflow-GPU install under (tf) virtualenv
+easy_install -U pip
+pip install --upgrade tensorflow-gpu
+
+# install mssql
+
