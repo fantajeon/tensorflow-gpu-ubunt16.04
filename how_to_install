@@ -16,6 +16,9 @@ export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH}
 # cuDNN
 https://developer.nvidia.com/cudnn
 
+# ldconfig
+sudo ldconfig
+
 # TWEAK(swap capslock and ctrl)
 sudo apt install gnome-tweak-tool
 
