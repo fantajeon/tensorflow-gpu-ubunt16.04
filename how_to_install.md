@@ -68,12 +68,16 @@ import tensorflow as tf
 hello = tf.constant(‘Hello, TensorFlow!’)
 sess = tf.Session()
 sess.run(hello)
-
+```
 
 # install mssql
-
+```
+export PYMSSQL_BUILD_WITH_BUNDLED_FREETDS=1
+pip install pymssql
+```
 
 # install extra packages
 ```
-pip install dateutil
+pip install pymysql
+pip install dateutils
 ```
