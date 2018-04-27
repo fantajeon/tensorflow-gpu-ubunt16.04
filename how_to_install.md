@@ -65,7 +65,7 @@ pip install --upgrade tensorflow-gpu
 # tensorflow validation
 ```PYTHON
 import tensorflow as tf
-hello = tf.constant(‘Hello, TensorFlow!’)
+hello = tf.constant("Hello, TensorFlow!")
 sess = tf.Session()
 sess.run(hello)
 ```
