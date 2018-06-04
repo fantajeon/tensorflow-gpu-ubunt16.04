@@ -36,6 +36,15 @@ sudo apt install gnome-tweak-tool
 # TMUX
 ```
 sudo apt install tmux
+vi ~/.tmux.conf
+set -g prefix C-a
+ubind C-b
+bind-Key C-a send-prefix
+bind a send-prefix
+
+set -g default-terminal "xterm-256color"
+set -g history-limit 3000
+
 ```
 
 # VIM
