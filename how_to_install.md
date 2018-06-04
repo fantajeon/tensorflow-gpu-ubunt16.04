@@ -89,6 +89,7 @@ pip install dateutils
 ```
 # REVERSE SSH(Gateway out of NAT)
 ```
+# sudo apt install -y openssh-server
 /home/deepuser> cat > reverse_ssh.sh
 #!/bin/bash
 ssh -f -nNT -o ServerAliveInterval=10 -o ExitOnForwardFailure=yes -o TCPKeepAlive=yes -R XXXXX:127.0.0.1:22 ubuntu@X5XXXXX -i ~/XXXXXX.pem
