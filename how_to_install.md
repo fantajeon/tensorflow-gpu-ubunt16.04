@@ -91,7 +91,7 @@ pip install dateutils
 ```
 /home/deepuser> cat > reverse_ssh.sh
 #!/bin/bash
-ssh -f -nNT -o ExitOnForwardFailure=yes -o TCPKeepAlive=yes -R XXXXX:127.0.0.1:22 ubuntu@X5XXXXX -i ~/XXXXXX.pem
+ssh -f -nNT -o ServerAliveInterval=10 -o ExitOnForwardFailure=yes -o TCPKeepAlive=yes -R XXXXX:127.0.0.1:22 ubuntu@X5XXXXX -i ~/XXXXXX.pem
 ```
 ```
 /home/deepuser> chmod +x reverse_ssh.sh
@@ -108,5 +108,12 @@ MAILTO=""
 # matplob
 ```bashshell
 sudo apt install python3.6-tk
-pip install matploblib
+pip install matplotlib
 ```
+
+# OpenGYM
+```bashshell
+sudo apt install -y swig cmake zlib1g-dev
+git clone https://github.com/openai/gym.git
+cd gym
+pip install -e '.[all]'
