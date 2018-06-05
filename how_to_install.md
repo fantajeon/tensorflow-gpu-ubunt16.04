@@ -127,6 +127,7 @@ sudo apt install -y swig cmake zlib1g-dev
 git clone https://github.com/openai/gym.git
 cd gym
 pip install -e '.[all]'
+```
 
 # Micellious
 ```bashshell
