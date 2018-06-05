@@ -135,7 +135,7 @@ hi Visual term=reverse cterm=reverse guibg=Yellow
 ```
 
 ```bashshell
-vim +PluginInstall +molokai
+vim +PluginInstall +qall
 ```
 # PYTHON 3.6
 ```
