@@ -133,6 +133,10 @@ au BufRead,BufNewFile *.h set noexpandtab
 colorscheme molokai
 hi Visual term=reverse cterm=reverse guibg=Yellow
 ```
+
+```bashshell
+vim +PluginInstall +molokai
+```
 # PYTHON 3.6
 ```
 sudo add-apt-repository ppa:deadsnakes/ppa
