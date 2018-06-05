@@ -72,8 +72,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Bundle 'nathanaelkane/vim-indent-guides'
 
-" Bundle 'davidhalter/jedi-vim'
-
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -106,7 +104,7 @@ set nobackup
 set nowritebackup
 set ignorecase
 set noswapfile
-set list
+" set list   "hide hidden character
 set hlsearch
 let python_highlight_all = 1
 set shiftwidth=4
