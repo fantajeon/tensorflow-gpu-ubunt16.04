@@ -134,4 +134,5 @@ pip install -e '.[all]'
 pip install opencv-python
 pip install tqdm
 pip install better_exceptions
+pip install gpustat
 ```
