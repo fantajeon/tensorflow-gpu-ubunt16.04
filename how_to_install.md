@@ -44,6 +44,7 @@ bind a send-prefix
 
 set -g default-terminal "xterm-256color"
 set -g history-limit 3000
+set-window-option -g mode-keys vi
 
 ```
 
