@@ -6,7 +6,12 @@ sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt update
 Menu > System Settings > Software Update > Addtional Drivers
 ```
-
+some tips: X window stop
+```bashshell
+sudo service lightdm stop    # x-org stop
+# install nvidia driver
+sudo service lightdm start   # x-org start
+```
 # CUDA(9.0, not 9.1)
 ```bashshell
 https://developer.nvidia.com/cuda-downloads
