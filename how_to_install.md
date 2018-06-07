@@ -8,9 +8,9 @@ Menu > System Settings > Software Update > Addtional Drivers
 ```
 some tips: X window stop
 ```bashshell
-sudo service lightdm stop    # x-org stop
-# install nvidia driver
-sudo service lightdm start   # x-org start
+sudo service lightdm stop    # Xorg stop
+# install nvidia driver(you should get download driver install file and install it manually)
+sudo service lightdm start   # Xorg start
 ```
 # CUDA(9.0, not 9.1)
 ```bashshell
