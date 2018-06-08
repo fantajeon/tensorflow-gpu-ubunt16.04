@@ -69,7 +69,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
-Plugin 'https://github.com/Yggdroot/indentLine.git'
+Bundle 'nathanaelkane/vim-indent-guides'
 Plugin 'https://github.com/tomasr/molokai.git'
 
 " All of your Plugins must be added before the following line
@@ -113,8 +113,12 @@ set linebreak
 set wrap
 
 " Indent Guide Lines
-let g:indentLine_enabled = 1
-let g:indentLine_char = '⎸'
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_auto_colors = 0
+let g:indent_guides_start_level=1
+let g:indent_guides_guide_size=0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#080808   ctermbg=232
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#121212 ctermbg=233
 
 au BufRead,BufNewFile *.py,*.pyw set expandtab
 au BufRead,BufNewFile *.py,*.pyw set shiftwidth=2
