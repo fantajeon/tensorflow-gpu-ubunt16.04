@@ -120,12 +120,12 @@ let g:indent_guides_guide_size=0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#080808   ctermbg=232
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#121212 ctermbg=233
 
-au BufRead,BufNewFile *.py,*.pyw set expandtab
-au BufRead,BufNewFile *.py,*.pyw set shiftwidth=2
-au BufRead,BufNewFile *.py,*.pyw set softtabstop=2
-au BufRead,BufNewFile *.py,*.pyw set ts=2
-au BufRead,BufNewFile *.py,*.pyw set sw=2 et
-au BufRead,BufNewFile *.py,*.pyw set tabstop=2
+au BufRead,BufNewFile *.py,*.pyw,*.pyx set expandtab
+au BufRead,BufNewFile *.py,*.pyw,*.pyx set shiftwidth=2
+au BufRead,BufNewFile *.py,*.pyw,*.pyx set softtabstop=2
+au BufRead,BufNewFile *.py,*.pyw,*.pyx set ts=2
+au BufRead,BufNewFile *.py,*.pyw,*.pyx set sw=2 et
+au BufRead,BufNewFile *.py,*.pyw,*.pyx set tabstop=2
 
 au BufRead,BufNewFile *.c set noexpandtab
 au BufRead,BufNewFile *.h set noexpandtab
