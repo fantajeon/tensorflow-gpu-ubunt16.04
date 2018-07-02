@@ -6,7 +6,7 @@ sudo hostnamectl set-hostname xxxx-xxx  # it will be modify hostname /etc/hostna
 sudo vi /etc/hosts
 ```
 ```vim
-change your hostname
+# change your hostname(same the name in /etc/hostname(hostnamectl))
 127.0.0.1 xxxx-xxx
 ```
 
