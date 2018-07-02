@@ -2,7 +2,7 @@
 
 # CHANGE HOSTNAME[Optional]
 ```bashshell
-sudo hostnamectl set-hostname xxxx-xxx  # it will be modity hostname
+sudo hostnamectl set-hostname xxxx-xxx  # it will be modify hostname /etc/hostname
 sudo vi /etc/hosts
 ```
 ```vim
