@@ -1,5 +1,14 @@
 
 
+# CHANGE HOSTNAME[Optional]
+```bashshell
+sudo hostnamectl set-hostname xxxx-xxx
+sudo vi /etc/hosts
+```
+```vim
+127.0.0.1 xxxx-xxx
+```
+
 # NVIDIA Driver
 ```bashshell
 sudo add-apt-repository ppa:graphics-drivers/ppa
