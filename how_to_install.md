@@ -10,6 +10,17 @@ sudo vi /etc/hosts
 127.0.0.1 xxxx-xxx
 ```
 
+# Swapfile(128G)
+```bashshell
+sudo fallocate -l 128G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+sudo sysctl vm.swappiness=10
+sudo sysctl vm.vfs_cache_pressure=50
+```
+
 # NVIDIA Driver
 ```bashshell
 sudo add-apt-repository ppa:graphics-drivers/ppa
